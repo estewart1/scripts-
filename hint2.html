@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>flAWS</title>
+        <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+        <style>
+            body { font-family: Andale Mono, monospace; }
+            :not(center) > pre { background-color: #202020; padding: 4px; border-radius: 5px; border-color:#00d000; 
+            border-width: 1px; border-style: solid;} 
+        </style>
+    </head>
+<body 
+  text="#00d000" 
+  bgcolor="#000000"  
+  style="max-width:800px; margin-left:auto ;margin-right:auto"
+  vlink="#00ff00" link="#00ff00">
+    
+<center>
+<pre >
+ _____  _       ____  __    __  _____
+|     || |     /    ||  |__|  |/ ___/
+|   __|| |    |  o  ||  |  |  (   \_ 
+|  |_  | |___ |     ||  |  |  |\__  |
+|   _] |     ||  _  ||  `  '  |/  \ |
+|  |   |     ||  |  | \      / \    |
+|__|   |_____||__|__|  \_/\_/   \___|
+</pre>
+
+<h1>Level 3: Hint 2</h1>
+</center>
+
+People often accidentally add secret things to git repos, and then try to remove them without revoking or rolling the secrets.  You can look through the history of a git repo by running:
+
+<pre>
+git log
+</pre>
+
+Then you can look at what a git repo looked like at the time of a commit by running:
+
+<pre>
+git checkout f7cebc46b471ca9838a0bdd1074bb498a3f84c87
+</pre>
+
+where `f7cebc46b471ca9838a0bdd1074bb498a3f84c87` would be the hash for the commit shown in `git log`.
+
+<p>Need another hint?  Go to <a href="./hint3.html">Hint 3</a>

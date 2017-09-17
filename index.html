@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>flAWS - Level 3</title>
+        <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+        <style>
+            body { font-family: Andale Mono, monospace; }
+            img { margin: 10px; display: block; margin-left: auto; margin-right: auto; }
+        </style>
+    </head>
+<body 
+  text="#00d000" 
+  bgcolor="#000000"  
+  style="max-width:800px; margin-left:auto ;margin-right:auto"
+  vlink="#00ff00" link="#00ff00">
+<center>
+<pre>
+ _____  _       ____  __    __  _____
+|     || |     /    ||  |__|  |/ ___/
+|   __|| |    |  o  ||  |  |  (   \_ 
+|  |_  | |___ |     ||  |  |  |\__  |
+|   _] |     ||  _  ||  `  '  |/  \ |
+|  |   |     ||  |  | \      / \    |
+|__|   |_____||__|__|  \_/\_/   \___|
+</pre>
+<h1>flAWS - Level 3</h1>
+</center>
+
+<h3>Lesson learned</h3>
+Similar to opening permissions to "Everyone", people accidentally open permissions to "Any Authenticated AWS User".  They might mistakenly think this will only be users of their account, when in fact it means anyone that has an AWS account.
+
+<h4>Examples of this problem</h4>
+<ul> 
+  <li>Open permissions for authenticated AWS user on Shopify (<a href="https://hackerone.com/reports/98819">link</a>)
+</ul>
+
+<h3>Avoiding the mistake</h3>
+Only open permissions to specific AWS users.
+
+<img style="max-width:500px" src="./authenticated_users.png">
+
+<hr size=3 color="#00d000" />
+<h1>Level 3</h1>
+The next level is fairly similar, with a slight twist.  Time to find your first AWS key! I bet you'll find something that will let you list what other buckets are.
+
+<p>For hints, see <a href="./hint1.html">Hint 1</a>
+
+<br><br><br><br><br><br><br><br><br><br><br><br>

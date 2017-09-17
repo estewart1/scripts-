@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>flAWS</title>
+        <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+        <style>
+            body { font-family: Andale Mono, monospace; }
+            :not(center) > pre { background-color: #202020; padding: 4px; border-radius: 5px; border-color:#00d000; 
+            border-width: 1px; border-style: solid; white-space: pre-wrap;} 
+        </style>
+    </head>
+<body 
+  text="#00d000" 
+  bgcolor="#000000"  
+  style="max-width:800px; margin-left:auto ;margin-right:auto"
+  vlink="#00ff00" link="#00ff00">
+    
+<center>
+<pre >
+ _____  _       ____  __    __  _____
+|     || |     /    ||  |__|  |/ ___/
+|   __|| |    |  o  ||  |  |  (   \_ 
+|  |_  | |___ |     ||  |  |  |\__  |
+|   _] |     ||  _  ||  `  '  |/  \ |
+|  |   |     ||  |  | \      / \    |
+|__|   |_____||__|__|  \_/\_/   \___|
+</pre>
+
+<h1>Level 3: Hint 1</h1>
+</center>
+Like the first level, you should have figured out how to list the files in this directory, and seen that listing in this bucket is open to "Everyone".  See the file listing at <a href="http://level3-9afd3927f195e10225021a578e6f78df.flaws.cloud.s3.amazonaws.com/">level3-9afd3927f195e10225021a578e6f78df.flaws.cloud.s3.amazonaws.com/</a>
+
+<p>This S3 bucket has a .git file.  There are probably interesting things in it. Download this whole S3 bucket using:
+
+<pre>
+aws s3 sync s3://level3-9afd3927f195e10225021a578e6f78df.flaws.cloud/ . --no-sign-request --region us-west-2
+</pre>
+
+<p>Need another hint?  See <a href="./hint2.html">Hint 2</a>

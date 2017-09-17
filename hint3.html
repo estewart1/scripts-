@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>flAWS</title>
+        <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+        <style>
+            body { font-family: Andale Mono, monospace; }
+            :not(center) > pre { background-color: #202020; padding: 4px; border-radius: 5px; border-color:#00d000; 
+            border-width: 1px; border-style: solid;} 
+        </style>
+    </head>
+<body 
+  text="#00d000" 
+  bgcolor="#000000"  
+  style="max-width:800px; margin-left:auto ;margin-right:auto"
+  vlink="#00ff00" link="#00ff00">
+    
+<center>
+<pre >
+ _____  _       ____  __    __  _____
+|     || |     /    ||  |__|  |/ ___/
+|   __|| |    |  o  ||  |  |  (   \_ 
+|  |_  | |___ |     ||  |  |  |\__  |
+|   _] |     ||  _  ||  `  '  |/  \ |
+|  |   |     ||  |  | \      / \    |
+|__|   |_____||__|__|  \_/\_/   \___|
+</pre>
+
+<h1>Level 3: Hint 3</h1>
+</center>
+
+You should have found the AWS key and secret. You can configure your aws command to use it and create a profile for it using:
+
+<pre>
+aws configure --profile flaws
+</pre>
+
+Then to list S3 buckets using that profile run:
+
+<pre>
+aws --profile flaws s3 ls
+</pre>
+
+
+<p>Want to just find out where the next level is?  Go to <a href="./hint4.html">Hint 4</a>
